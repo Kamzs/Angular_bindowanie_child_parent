@@ -1,0 +1,7 @@
+<h2>child-outputing-data</h2>
+
+<h3>elementy wyswietlane przez child component</h3>
+<ng-container *ngFor="let element of data">
+  {{element}}
+  <button (click)="pushUp(element)"> Wyslij wyzej </button>
+</ng-container>
