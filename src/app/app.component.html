@@ -9,3 +9,15 @@
 <ng-container *ngFor="let element of lista">
   {{element}}
 </ng-container>
+
+<h3>lista elementów przepchniętych niżej przez ng-content</h3>
+<ul>
+  <li>some text pushed down</li>
+  <li>some text pushed down</li>
+</ul>
+<app-ngcontent>
+  <ul>
+    <li>some text pushed down</li>
+    <li>some text pushed down</li>
+  </ul>
+</app-ngcontent>
